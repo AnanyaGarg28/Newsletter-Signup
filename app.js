@@ -70,10 +70,9 @@ app.post("/failure", function(req, res){
   //res.redirect("/");                    //localhost:3000
 });
 
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
   console.log("Server is up and running on port 3000");
 });
-
 
 //MailChimp API Key
 //f5d3804377d6065c7d76c87eeac8edab-us14
